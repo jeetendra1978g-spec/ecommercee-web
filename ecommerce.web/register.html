@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account - StyleShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Header styling to match the theme */
+      header {
+        background-color: #232f3e;
+        color: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff9900;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #ff9900;
+      }
+
+      .user-actions {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .user-actions a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .cart-icon {
+        position: relative;
+      }
+
+      .cart-count {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: #ff9900;
+        color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+
+      /* Main content styling */
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .register-container {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        padding: 30px;
+      }
+
+      .register-header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .register-header h1 {
+        color: #232f3e;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .register-header p {
+        color: #666;
+        font-size: 16px;
+      }
+
+      .form-section {
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .form-section-title {
+        font-size: 18px;
+        color: #232f3e;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #ff9900;
+        display: inline-block;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+
+      .form-group {
+        flex: 1;
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #555;
+      }
+
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus {
+        border-color: #ff9900;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 153, 0, 0.2);
+      }
+
+      .password-strength {
+        margin-top: 5px;
+        font-size: 14px;
+        height: 20px;
+      }
+
+      .strength-weak {
+        color: #d93025;
+      }
+
+      .strength-medium {
+        color: #f90;
+      }
+
+      .strength-strong {
+        color: #0f9d58;
+      }
+
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      .checkbox-group input {
+        width: auto;
+      }
+
+      .checkbox-group label {
+        margin-bottom: 0;
+        font-weight: normal;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #ff9900;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #e68a00;
+      }
+
+      .login-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 15px;
+        color: #555;
+      }
+
+      .login-link a {
+        color: #0066c0;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+
+      .terms {
+        font-size: 12px;
+        color: #666;
+        margin-top: 20px;
+        line-height: 1.5;
+      }
+
+      /* Footer styling */
+      footer {
+        background-color: #232f3e;
+        color: white;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #ff9900;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-section a {
+        color: #ddd;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section a:hover {
+        color: #ff9900;
+      }
+
+      .copyright {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #444;
+        margin-top: 20px;
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .register-container {
+          padding: 20px;
+        }
+
+        .form-row {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .footer-content {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="top-nav">
+        <a href="#" class="logo">StyleShop</a>
+
+        <div class="nav-links">
+          <a href="#">Customer Care</a>
+          <a href="#">Track Order</a>
+          <a href="#">Today's Deals</a>
+          <a href="#">Sell</a>
+        </div>
+
+        <div class="user-actions">
+          <a href="signin.html">Sign In</a>
+          <a href="#">Orders</a>
+          <a href="#" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="register-container">
+        <div class="register-header">
+          <h1>Create Account</h1>
+          <p>Join StyleShop for a personalized shopping experience</p>
+        </div>
+
+        <form id="registerForm">
+          <!-- Personal Information Section -->
+          <div class="form-section">
+            <h2 class="form-section-title">Personal Information</h2>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="confirmEmail">Re-enter Email Address</label>
+              <input type="email" id="confirmEmail" required />
+            </div>
+          </div>
+
+          <!-- Login Information Section -->
+          <div class="form-section">
+            <h2 class="form-section-title">Login Information</h2>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" required minlength="6" />
+              <div class="password-strength" id="passwordStrength"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Re-enter Password</label>
+              <input type="password" id="confirmPassword" required />
+            </div>
+          </div>
+
+          <!-- Address Information Section -->
+          <div class="form-section">
+            <h2 class="form-section-title">Address Information</h2>
+
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" required />
+            </div>
+
+            <div class="form-group">
+              <label for="address2">Apt, Suite, Building (Optional)</label>
+              <input type="text" id="address2" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" required />
+              </div>
+
+              <div class="form-group">
+                <label for="state">State/Province/Region</label>
+                <input type="text" id="state" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="zipCode">ZIP/Postal Code</label>
+                <input type="text" id="zipCode" required />
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" required>
+                  <option value="">Select a country</option>
+                  <option value="US">United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="CA">Canada</option>
+                  <option value="AU">Australia</option>
+                  <option value="DE">Germany</option>
+                  <option value="FR">France</option>
+                  <option value="IN">India</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" />
+              <div class="checkbox-group">
+                <input type="checkbox" id="smsUpdates" />
+                <label for="smsUpdates">Send me text message updates</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Communication Preferences -->
+          <div class="form-section">
+            <h2 class="form-section-title">Communication Preferences</h2>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="emailUpdates" checked />
+              <label for="emailUpdates"
+                >Yes, I would like to receive email updates with exclusive deals
+                and personalized recommendations</label
+              >
+            </div>
+          </div>
+
+          <!-- Terms and Conditions -->
+          <div class="form-section">
+            <div class="checkbox-group">
+              <input type="checkbox" id="terms" required />
+              <label for="terms"
+                >I agree to the StyleShop <a href="#">Terms of Service</a>,
+                <a href="#">Privacy Policy</a>, and
+                <a href="#">Returns Policy</a></label
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="btn">
+            Create your StyleShop account
+          </button>
+
+          <div class="terms">
+            <p>
+              By creating an account, you agree to StyleShop's Conditions of Use
+              and Privacy Notice.
+            </p>
+          </div>
+        </form>
+
+        <div class="login-link">
+          <p>Already have an account? <a href="#">Sign in</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Get to Know Us</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About StyleShop</a></li>
+            <li><a href="#">Investor Relations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Make Money with Us</h3>
+          <ul>
+            <li><a href="#">Sell products</a></li>
+            <li><a href="#">Sell on StyleShop</a></li>
+            <li><a href="#">Become an Affiliate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="#">Shipping Rates & Policies</a></li>
+            <li><a href="#">Returns & Replacements</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 StyleShop. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Password strength indicator
+      const passwordInput = document.getElementById("password");
+      const strengthText = document.getElementById("passwordStrength");
+
+      passwordInput.addEventListener("input", function () {
+        const password = passwordInput.value;
+        let strength = "";
+        let strengthClass = "";
+
+        if (password.length === 0) {
+          strength = "";
+        } else if (password.length < 6) {
+          strength = "Weak";
+          strengthClass = "strength-weak";
+        } else if (password.length < 10) {
+          strength = "Medium";
+          strengthClass = "strength-medium";
+        } else {
+          // Check for complexity
+          const hasUpperCase = /[A-Z]/.test(password);
+          const hasLowerCase = /[a-z]/.test(password);
+          const hasNumbers = /\d/.test(password);
+          const hasSpecial = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+          const complexity = [
+            hasUpperCase,
+            hasLowerCase,
+            hasNumbers,
+            hasSpecial,
+          ].filter(Boolean).length;
+
+          if (complexity >= 3) {
+            strength = "Strong";
+            strengthClass = "strength-strong";
+          } else {
+            strength = "Medium";
+            strengthClass = "strength-medium";
+          }
+        }
+
+        strengthText.textContent = strength;
+        strengthText.className = "password-strength " + strengthClass;
+      });
+
+      // Form validation
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("email").value;
+          const confirmEmail = document.getElementById("confirmEmail").value;
+          const password = document.getElementById("password").value;
+          const confirmPassword =
+            document.getElementById("confirmPassword").value;
+          const terms = document.getElementById("terms").checked;
+
+          let isValid = true;
+
+          // Email validation
+          if (email !== confirmEmail) {
+            alert("Email addresses do not match");
+            isValid = false;
+          }
+
+          // Password validation
+          if (password !== confirmPassword) {
+            alert("Passwords do not match");
+            isValid = false;
+          }
+
+          // Terms validation
+          if (!terms) {
+            alert("You must agree to the Terms of Service");
+            isValid = false;
+          }
+
+          if (isValid) {
+            // Simulate registration process
+            alert("Registration successful! Redirecting to homepage...");
+            // In a real application, you would redirect to another page
+          }
+        });
+    </script>
+  </body>
+</html>

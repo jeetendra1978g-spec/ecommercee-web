@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Section - StyleShop</title>
+    <link rel="stylesheet" href="womenpage.css" />
+  </head>
+
+  <body>
+    <script src="womenpage.js"></script>
+    <div class="top-header">
+      <div class="container">
+        <div class="top-header-content">
+          <div class="top-header-left">
+            <a href="#customer-care"
+              ><i class="fas fa-headset"></i> Customer Care</a
+            >
+            <a href="#track-order"><i class="fas fa-truck"></i> Track Order</a>
+            <a href="#offers"><i class="fas fa-tag"></i> Today's Deals</a>
+            <a href="#sell"><i class="fas fa-store"></i> Sell</a>
+          </div>
+          <div class="top-header-right">
+            <div class="account-dropdown">
+              <a href="#account" class="account-toggle"
+                ><i class="fas fa-user-circle"></i>More</a
+              >
+              <div class="dropdown-content">
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-section">
+                  <h4>Your Account</h4>
+                  <a href="signin.html"
+                    ><i class="fas fa-user-plus"></i> Sign In</a
+                  >
+                  <a href="login.html"
+                    ><i class="fas fa-sign-in-alt"></i> Login</a
+                  >
+                  <a href="register.html"
+                    ><i class="fas fa-user-plus"></i> Register</a
+                  >
+                </div>
+                <div class="dropdown-section">
+                  <h4>Your Lists</h4>
+                  <a href="#wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                  <a href="#gift"><i class="fas fa-gift"></i> Gift Cards</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Your Orders</h4>
+                  <a href="#orders"><i class="fas fa-box"></i> My Orders</a>
+                  <a href="#returns"
+                    ><i class="fas fa-undo"></i> Returns & Orders</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a href="#orders" class="top-header-link"
+              ><i class="fas fa-shopping-bag"></i> Orders</a
+            >
+            <a href="#cart" class="cart-preview"
+              ><i class="fas fa-shopping-cart"></i> Cart
+              <span class="cart-count">3</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">StyleShop</span>
+
+              <span class="logo-tagline">Women's Collection</span>
+            </div>
+          </div>
+
+          <div class="theme-switcher">
+            <a href="homepage2.html"
+              ><button class="theme-btn active" data-theme="default">
+                For Everyone
+              </button></a
+            >
+            <a href="menpage.html"
+              ><button class="theme-btn" data-theme="men">
+                Men's Section
+              </button></a
+            >
+          </div>
+          <div class="search-container">
+            <div class="search-bar">
+              <input type="text" placeholder="Search women's fashion..." />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+
+          <div class="user-actions">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count"> </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Add these sections after the Women's Collection section -->
+
+    <!-- Trending Now Section -->
+    <!-- Replace the Trending Now section with this code -->
+    <section class="container">
+      <h2 class="section-title">Featured Categories</h2>
+      <div class="categories">
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Clothing"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Clothing</h3>
+            <p>Modern and trendy outfits</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.KMy5q68fUx6GByETPcvq6QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Accessories"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Accessories</h3>
+            <p>Complete your look</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Home Decor"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Sportswear</h3>
+            <p>Style your living space</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Footwear"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Footwear</h3>
+            <p>Stylish and comfortable</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Beauty"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Beauty</h3>
+            <p>Premium care products</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Electronics"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Handbags</h3>
+            <p>Disgner handbags</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://images.unsplash.com/photo-1605733513597-a8f8341084e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Jewelry"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Jewelry</h3>
+            <p>Elegant and timeless pieces</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="https://img.freepik.com/premium-photo/all-sports-elements-dark-background_534373-20824.jpg"
+              alt="Sports"
+            />
+          </div>
+          <div class="category-info">
+            <h3>Googles</h3>
+            <p>Equipment and activewear</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Now Section -->
+    <section class="container">
+      <h2 class="section-title">Trending Now</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Faux Leather Jacket"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Faux Leather Jacket</h3>
+            <p>Stylish and vegan-friendly faux leather jacket.</p>
+            <div class="price">$89.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Wrap Dress"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Floral Wrap Dress</h3>
+            <p>Flattering wrap dress with beautiful floral pattern.</p>
+            <div class="price">$65.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.iWtsVN0MUORSlQ8evxLzYAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Ankle Boots"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Ankle Boots</h3>
+            <p>Chic ankle boots perfect for transitional weather.</p>
+            <div class="price">$79.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://th.bing.com/th/id/OIP.8_qB1mx612dTjtLCEH0XBAHaLz?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt=" Wide-Leg Pants"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Wide-Leg Pants</h3>
+            <p>Comfortable and stylish wide-leg trousers.</p>
+            <div class="price">$59.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://i.pinimg.com/originals/33/f6/74/33f6747577f9ac6b39dfc940aff79ca6.jpg"
+              alt="Satin Blouse"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Satin Blouse</h3>
+            <p>Elegant satin blouse with a luxurious feel.</p>
+            <div class="price">$49.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://blog.jamesallen.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-23-at-18.12.06-20.jpeg"
+              alt="Stackable Rings"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Stackable Rings Set</h3>
+            <p>Set of delicate rings that can be worn together.</p>
+            <div class="price">$35.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.mq8qzDHTHtBQzZ35kKVaZQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Yoga Set"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Yoga Set</h3>
+            <p>Complete yoga set for your practice sessions.</p>
+            <div class="price">$74.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1529903384028-929ae5dccdf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Midi Skirt"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Pleated Midi Skirt</h3>
+            <p>Elegant pleated midi skirt for various occasions.</p>
+            <div class="price">$55.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bestsellers Section -->
+    <section class="container">
+      <h2 class="section-title">Bestsellers</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/418ad1d1-1372-4464-be1a-686216972617/interact-run-road-running-shoes-c21XPX.png"
+              alt="Women's Running Shoes"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Women's Running Shoes</h3>
+            <p>Comfortable and supportive running shoes for women.</p>
+            <div class="price">$89.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.HD4jdGQNw7inkRQAVda1bwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Designer Handbag"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Designer Handbag</h3>
+            <p>Luxurious designer handbag with premium materials.</p>
+            <div class="price">$149.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/684975/01/mod01/fnd/IND/fmt/png/Small-No.-1-Logo-Women's-Relaxed-Fit-Crew-Neck-Sweater"
+              alt="Cashmere Sweater"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Cashmere Sweater</h3>
+            <p>Luxuriously soft cashmere sweater for ultimate comfort.</p>
+            <div class="price">$129.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://cdnd.lystit.com/photos/2013/04/21/dg-white-sheer-ruffled-silk-blouse-product-1-8063277-883987380.jpeg"
+              alt="Silk Blouse"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Silk Blouse</h3>
+            <p>Elegant silk blouse for professional settings.</p>
+            <div class="price">$79.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://i.etsystatic.com/6027990/r/il/e90620/421649366/il_fullxfull.421649366_cz3s.jpg"
+              alt="Pearl Necklace"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Pearl Necklace</h3>
+            <p>Classic pearl necklace for timeless elegance.</p>
+            <div class="price">$89.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.DTBUlKURT2V-vHupJkoU8AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Women's Watch"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Women's Watch</h3>
+            <p>Elegant timepiece with rose gold finish.</p>
+            <div class="price">$119.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.mq8qzDHTHtBQzZ35kKVaZQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Yoga Outfit"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Yoga Outfit</h3>
+            <p>Comfortable and stylish yoga set for your practice.</p>
+            <div class="price">$64.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://th.bing.com/th/id/R.7b831e64463b118f2e4113a28c449150?rik=VsKcKfWeKB%2blrg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-QNyAHHuRj6I%2fVZkf0wz7t6I%2fAAAAAAAAAU4%2fDYk-7IjJhZo%2fs1600%2f82a4b591-75bd-482c-ba1f-9fd4fd845aa1.jpg&ehk=L8MKhPtuj%2blQe6MPcMxi0bda64B49M8ITh%2bTklAYuwg%3d&risl=&pid=ImgRaw&r=0"
+              alt="Maxi Dress"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Maxi Dress</h3>
+            <p>Flowing maxi dress perfect for summer occasions.</p>
+            <div class="price">$69.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="container">
+      <h2 class="section-title">New Products</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Women's Leather Jacket"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Women's Leather Jacket</h3>
+            <p>Stylish and timeless leather jacket for women.</p>
+            <div class="price">$159.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.6lxdbFgchpgyyMYsG68SOQHaKn?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Evening Gown"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Evening Gown</h3>
+            <p>Elegant evening gown for special occasions.</p>
+            <div class="price">$189.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://th.bing.com/th?id=OPAC.3v%2fxN18DMWpEDw474C474&w=220&h=220&c=17&o=5&dpr=1.1&pid=21.1"
+              alt="Women's Boots"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Women's Boots</h3>
+            <p>Stylish and comfortable boots for everyday wear.</p>
+            <div class="price">$99.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Linen Dress"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Linen Dress</h3>
+            <p>Breathable linen dress perfect for warm weather.</p>
+            <div class="price">$74.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://foxtale.in/cdn/shop/files/VALLEY_OF_FLOWER_133446ca-95e5-449b-8654-410acd9b8045.jpg?v=1754549399&width=700"
+              alt="Women's Perfume"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Women's Perfume</h3>
+            <p>Luxurious fragrance with floral notes.</p>
+            <div class="price">$89.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.VHFKVj1rSAK5tZfC4ahFEAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Gold Bracelet"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Gold Bracelet</h3>
+            <p>Elegant gold bracelet for any occasion.</p>
+            <div class="price">$79.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.5zfNW8Jk5sOERXbxsLxDYQHaKG?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Sports Bra"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Gown</h3>
+            <p>gorgous and beautiful.</p>
+            <div class="price">$39.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.q0mmIfMle5XzJJgXDkn3qAHaLH?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Wrap Dress"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Wrap Dress</h3>
+            <p>Flattering wrap dress that suits all body types.</p>
+            <div class="price">$65.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Women's Products Section -->
+    <section class="container">
+      <h2 class="section-title">Women's Collection</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://th.bing.com/th/id/OIP.rOLPAAUk4hqV9-4_18PrDQHaJ3?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Floral Summer Dress"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Floral Summer Dress</h3>
+            <p>Light and breezy floral dress perfect for summer days.</p>
+            <div class="price">$59.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://th.bing.com/th/id/OIP.WeR9gjMM-W7AGcyWVOAQtgHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="High Heel Sandals"
+            />
+          </div>
+          <div class="product-info">
+            <h3>High Heel Sandals</h3>
+            <p>Elegant heeled sandals for special occasions.</p>
+            <div class="price">$89.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://th.bing.com/th/id/OIP.kaTkdYvSkf2jRS8glcwufAHaI8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Knit Sweater"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Cozy Knit Sweater</h3>
+            <p>Warm and stylish sweater for chilly days.</p>
+            <div class="price">$49.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://ae01.alicdn.com/kf/HTB1sITbaEvrK1RjSspcq6zzSXXar/Genuine-Leather-Luxury-Handbags-Women-Bags-Designer-Crossbody-Bags-Female-Shoulder-Messenger-Bag-Ladies-Fashion-Tote.jpg"
+              alt="Leather Handbag"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Leather Handbag</h3>
+            <p>Elegant leather handbag with ample storage space.</p>
+            <div class="price">$129.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://i.pinimg.com/originals/f4/76/56/f476569b3249ffc732f09fcaa3cc324f.jpg"
+              alt="Silk Blouse"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Silk Blouse</h3>
+            <p>Luxurious silk blouse for formal occasions.</p>
+            <div class="price">$79.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://m.media-amazon.com/images/I/41NvUwzo+AL._AC_UL480_QL65_.jpg"
+              alt="Denim Skirt"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Denim Skirt</h3>
+            <p>Classic denim skirt that pairs with everything.</p>
+            <div class="price">$45.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.ReEYw1M-Inzu13UFEa9W0wHaF9?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Statement Necklace"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Statement Necklace</h3>
+            <p>Bold necklace to elevate any outfit.</p>
+            <div class="price">$39.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/683091/68/mod01/fnd/IND/fmt/png/Loungewear-Women's-Tracksuit"
+              alt="Athleisure Set"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Athleisure Set</h3>
+            <p>Comfortable and stylish workout set.</p>
+            <div class="price">$69.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
